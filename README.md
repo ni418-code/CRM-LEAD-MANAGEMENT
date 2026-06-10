@@ -3,7 +3,7 @@
 A full-stack CRM application built as **Task 2** of the Future Interns Full Stack Web Development Internship.
 
 ## 🔗 Live Demo
-[View Live App](https://your-app-url.onrender.com) ← update this after deploying
+[View Live App](https://future-fs-02-okxa.onrender.com/) ← update this after deploying
 
 ## 📌 Features
 - 🔐 Secure admin login with JWT authentication
