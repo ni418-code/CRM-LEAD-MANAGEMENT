@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top header bar -->
+    <header class="header">
+        <div class="header-brand">📊 Lead Management CRM</div>
+        <button id="logout-btn" class="btn-logout">🚪 Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <!-- Stats row -->
+        <div class="stats-grid">
+            <div class="stat-card stat-total">
+                <div class="stat-number" id="total-count">0</div>
+                <div class="stat-label">Total Leads</div>
+            </div>
+            <div class="stat-card stat-new">
+                <div class="stat-number" id="new-count">0</div>
+                <div class="stat-label">New</div>
+            </div>
+            <div class="stat-card stat-contacted">
+                <div class="stat-number" id="contacted-count">0</div>
+                <div class="stat-label">Contacted</div>
+            </div>
+            <div class="stat-card stat-converted">
+                <div class="stat-number" id="converted-count">0</div>
+                <div class="stat-label">Converted</div>
+            </div>
+        </div>
+
+        <!-- Add new lead form -->
+        <div class="card">
+            <h2 class="card-title">➕ Add New Lead</h2>
+            <form id="add-lead-form" class="add-form">
+                <input type="text" id="lead-name" placeholder="Full Name" required>
+                <input type="email" id="lead-email" placeholder="Email Address" required>
+                <select id="lead-source">
+                    <option value="Website">Website</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Email Campaign">Email Campaign</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit" class="btn-add" id="add-btn">+ Add Lead</button>
+            </form>
+        </div>
+
+        <!-- Leads table -->
+        <div class="card">
+            <h2 class="card-title">📋 All Leads</h2>
+            <div class="table-scroll">
+                <table class="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Source</th>
+                            <th>Status</th>
+                            <th>Notes / Follow-up</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-tbody">
+                        <tr>
+                            <td colspan="6" class="empty-msg">Loading leads...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    border-radius: 18px;
+    padding: 44px 40px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+
+.login-logo {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.login-card h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.login-subtitle {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+}
+
+.error-msg {
+    color: #e53e3e;
+    font-size: 13px;
+    min-height: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 13px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.btn-primary:hover {
+    background: #5a6fd6;
+}
+
+.btn-primary:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.btn-logout {
+    padding: 8px 18px;
+    background: white;
+    color: #e53e3e;
+    border: 1.5px solid #e53e3e;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn-logout:hover {
+    background: #e53e3e;
+    color: white;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 20px;
+}
+
+/* Stats */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid #667eea;
+}
+
+.stat-total {
+    border-top-color: #667eea;
+}
+
+.stat-new {
+    border-top-color: #3182ce;
+}
+
+.stat-contacted {
+    border-top-color: #d69e2e;
+}
+
+.stat-converted {
+    border-top-color: #38a169;
+}
+
+.stat-number {
+    font-size: 38px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #888;
+    margin-top: 6px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    font-size: 17px;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+/* Add form */
+.add-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.add-form input,
+.add-form select {
+    flex: 1;
+    min-width: 160px;
+    padding: 11px 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.add-form input:focus,
+.add-form select:focus {
+    border-color: #667eea;
+}
+
+.btn-add {
+    padding: 11px 22px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background .2s;
+    flex-shrink: 0;
+}
+
+.btn-add:hover {
+    background: #5a6fd6;
+}
+
+.btn-add:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Table */
+.table-scroll {
+    overflow-x: auto;
+}
+
+.leads-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.leads-table th {
+    padding: 12px 14px;
+    background: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+}
+
+.leads-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+}
+
+.leads-table tr:hover td {
+    background: #fafafa;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #bbb;
+    padding: 32px !important;
+    font-size: 15px;
+}
+
+/* Status dropdown */
+.status-select {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1.5px solid #ddd;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.status-new {
+    background: #ebf8ff;
+    color: #2b6cb0;
+    border-color: #90cdf4;
+}
+
+.status-contacted {
+    background: #fffbeb;
+    color: #744210;
+    border-color: #f6d860;
+}
+
+.status-converted {
+    background: #f0fff4;
+    color: #22543d;
+    border-color: #9ae6b4;
+}
+
+/* Notes */
+.notes-input {
+    width: 100%;
+    min-width: 180px;
+    padding: 6px 10px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 7px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.notes-input:focus {
+    border-color: #667eea;
+}
+
+/* Delete */
+.btn-delete {
+    padding: 5px 12px;
+    background: white;
+    color: #e53e3e;
+    border: 1.5px solid #e53e3e;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn-delete:hover {
+    background: #e53e3e;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        padding: 12px 16px;
+    }
+
+    .header-brand {
+        font-size: 16px;
+    }
+}
