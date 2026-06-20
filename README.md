@@ -3,7 +3,7 @@
 A full-stack CRM application built for managing client leads.
 
 ## 🔗 Live Demo
-[View Live App](https://future-fs-02-okxa.onrender.com/) 
+[View Live App](https://crm-lead-management-n04q.onrender.com) 
 
 ## 📌 Features
 - 🔐 Secure admin login with JWT authentication
