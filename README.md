@@ -1,9 +1,9 @@
-# FUTURE_FS_02 — Client Lead Management System (Mini CRM)
+# Client Lead Management System (Mini CRM)
 
-A full-stack CRM application built as **Task 2** of the Future Interns Full Stack Web Development Internship.
+A full-stack CRM application built for managing client leads.
 
 ## 🔗 Live Demo
-[View Live App](https://future-fs-02-okxa.onrender.com/) ← update this after deploying
+[View Live App](https://future-fs-02-okxa.onrender.com/) 
 
 ## 📌 Features
 - 🔐 Secure admin login with JWT authentication
@@ -24,14 +24,14 @@ A full-stack CRM application built as **Task 2** of the Future Interns Full Stac
 | Deployment | Render |
 
 ## 🚀 Run Locally
-1. `git clone https://github.com/YourUsername/FUTURE_FS_02`
+1. `git clone https://github.com/YourUsername/CRM-LEAD-MANAGEMENT
 2. `npm install`
 3. Create `.env` file with your MongoDB URI and credentials
 4. `npm run dev`
 5. Open `http://localhost:5000`
 
 ## 📁 Project Structure
-FUTURE_FS_02/
+CRM-LEAD-MANAGEMENT/
 ├── backend/
 │   ├── models/Lead.js
 │   ├── routes/auth.js
@@ -46,6 +46,4 @@ FUTURE_FS_02/
 ├── package.json
 └── README.md
 
-## 🏢 Internship
-Future Interns | Full Stack Web Development Track | Track Code: **FS**
-Repository name: `FUTURE_FS_02`
+
